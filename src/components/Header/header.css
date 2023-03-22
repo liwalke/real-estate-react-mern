@@ -1,0 +1,119 @@
+.headerWrapper {
+    background-color: #4b6bb76a;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    z-index: 999;
+    transition: all 1s ease 0s;
+}
+
+.headerWrapper.solidBackground {
+    background: linear-gradient(90deg, #182848 0%, #4b6cb7 100%);
+}
+
+.header {
+    width: 100%;
+    max-width: 1250px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 400px;
+}
+
+.logo>a {
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+    padding: 30px;
+    transition: all 1s ease 0s;
+}
+
+.navigation {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation>ul {
+    display: flex;
+    padding: 30px;
+    gap: 30px;
+}
+
+.navigation a {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 15px;
+    color: #d4d4d4;
+    border-radius: 5px;
+}
+
+.navigation a:hover {
+    background-color: #ffffff24;
+    cursor: pointer;
+}
+
+.headerWrapper.active {
+    background: linear-gradient(90deg, #182848 0%, #4b6cb7 100%);
+    box-shadow: 0px 15px 10px -15px #111;
+    transition: all 1s ease 0s;
+}
+
+.logo>a.active{
+    font-size: 25px;
+    transition: all 1s ease 0s;
+}
+
+@media all and (max-width: 1100px){
+    .headerWrapper {
+        background: linear-gradient(90deg, #182848 0%, #4b6bb7 100%);
+        transition: all 1s ease 0s;
+    }
+    
+    .logo{
+        min-width: 400px;
+    }
+
+    .header{
+        flex-direction: column;
+    }
+
+    .navigation.hide{
+        display: none;
+    }
+
+    .navigation ul{
+        flex-direction: column;
+    }
+
+    .resposiveButton{
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+
+    .resposiveButton button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+    }
+}
+
+@media all and (min-width: 1101px){
+    .resposiveButton{
+        display: none;
+    }
+}

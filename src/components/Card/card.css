@@ -1,0 +1,94 @@
+.cardConteiner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    background: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    border-radius: 10px;
+}
+
+.cardSlider {
+    display: flex;
+    height: 200px;
+    width: 300px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.cardInfoConteiner {
+    padding: 15px;
+    color: #000000;
+}
+
+.cardInfoConteiner hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #d4d4d4;
+    margin: 10px 0px;
+    padding: 0;
+}
+
+.cardInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cardInfo span {
+    font-weight: bold;
+    position: relative;
+}
+
+.cardInfo p {
+    font-size: 14px;
+    color: #7b7b7b;
+}
+
+.cardInfo span:first-child {
+    padding-bottom: 2px;
+}
+
+.cardInfo span:first-child:after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(90deg, #2b4477 0%, #759cf7 100%);
+}
+
+.cardIcons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cardIcon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.cardFavoriteIcon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.cardFeaturedIcon{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: #4b6bb797;
+    top: 15px;
+    left: 15px;
+}

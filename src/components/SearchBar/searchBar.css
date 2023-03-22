@@ -1,0 +1,51 @@
+.searchBarWrapper{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.searchBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    margin-bottom: 150px;
+    padding: 25px;
+    background-color: #0000008d;
+    border-radius: 15px;
+}
+
+.searchBar .title {
+    color: white;
+}
+
+.selectItemsWrapper {
+    display: flex;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+.selectItemsWrapper select {
+    border: none;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.selectItemsWrapper button {
+    border: none;
+    background-color: #a19f9fbe;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+@media all and (max-width: 1000px){
+    .selectItemsWrapper{
+        flex-direction: column;
+    }
+}
